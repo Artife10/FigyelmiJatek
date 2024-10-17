@@ -16,12 +16,13 @@
             <option value="4">Közepes (4 szám)</option>
             <option value="5">Nehéz (5 szám)</option>
         </select>
+        <br>
         <button id="start-button" onclick="startGame()">Játék Indítása</button>
         
         <div id="game-area"></div>
         <div id="message"></div>
         <input type="text" id="user-input" placeholder="Írd be a számokat, vesszővel elválasztva" style="display: none;" />
-        <button id="submit-button" onclick="checkAnswer()" style="display: none;">Ellenőrzés</button>
+        <div id="ellenor"><button id="submit-button" onclick="checkAnswer()" style="display: none;">Ellenőrzés</button></div>
     </div>
 
     <script src="script.js"></script>

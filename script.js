@@ -37,7 +37,7 @@ function startGame() {
         document.getElementById("user-input").style.display = "block"; // Szövegmező megjelenítése
         document.getElementById("submit-button").style.display = "block"; // Ellenőrzés gomb megjelenítése
         document.getElementById("message").innerText = "Írd be a számokat, amelyeket láttál:";
-    }, 2000);
+    }, 500);
 }
 
 function checkAnswer() {
@@ -52,6 +52,7 @@ function checkAnswer() {
         ? "Helyes!"
         : `Helytelen! A helyes számok: ${correctNumbers.join(", ")}`;
     document.getElementById("message").innerText = message;
+    document.getElementById('user-input').value = "";
 }
 
 function generateUniqueNumbers(count, min, max) {

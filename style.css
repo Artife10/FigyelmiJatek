@@ -1,6 +1,7 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: black;
+    background-image: url('fa2.jfif');
+    background-size: 200px;
     color: #333;
     display: flex;
     justify-content: center;
